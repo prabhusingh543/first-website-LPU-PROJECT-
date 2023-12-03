@@ -1,0 +1,322 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    height: 90px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space in between */
+    align-items: center; /* Align items vertically in the center */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    color:gold;
+}
+
+#site-icon {
+    height: 100%;
+    width: auto;
+    margin-right: 10px; 
+    border:2px groove rgb(172, 147, 3);
+    border-width:5px;
+    border-radius:10px;
+}
+
+#search-bar {
+    text-align: center;
+    width: 300px;
+    border-radius: 4px;
+    margin-right: 0px;
+    height: auto;
+}
+
+#search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid rgb(249, 237, 169);
+    height:auto;
+    
+}
+
+#search-bar button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height:auto;
+    
+}
+
+#search-bar button:hover {
+    background-color: #555;
+}
+
+#cart-icon,
+#wishlist-icon,
+#profile-icon {
+    font-size: 15px;
+    color: #333;
+    padding: 10px;
+    background-color:rgb(250, 250, 161);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#cart-icon:hover,
+#wishlist-icon:hover,
+#profile-icon:hover {
+    background-color: #eee;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #search-bar {
+        margin-top: 10px;
+    }
+
+    #cart-icon,
+    #wishlist-icon,
+    #profile-icon {
+        margin-top: 10px;
+    }
+}
+
+/* slider*/
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 550px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+
+/* footer */
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+    background-color: #333;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 20%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    display: inline-block;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: gold;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color:gold;
+}
+
+.fb{
+    background-color:blue;
+    color:white
+}
+.x{
+    background-color:rgb(0, 204, 255);
+    color:white
+}
+.insta{
+    background-color:rgb(248, 68, 197);
+    color:white
+}
+.link{
+    background-color:rgb(10, 44, 108);
+    color:white
+}
+
+/* Existing CSS ... */
+
+.books-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 10%;
+}
+
+.book-slot {
+    width: 250px;
+    height: 350px; /* Set a fixed height */
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    text-align:center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.book-slot img {
+    max-width: 100%;
+    max-height: 68%; /* Set max-height to ensure scaling */
+    height: auto;
+    margin-bottom: 10px;
+    flex: 1; /* Use flex to make the image take available vertical space */
+}
+
+/* Adjust the styles for other elements within the book slot as needed */
+.book-slot h3,
+.book-slot p {
+    margin: 0;
+}
+
+.book-slot:hover img {
+    transform: scale(1.1); /* Increase the scale factor for zooming out */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+#cartt, #log{
+    color: black;
+}
+/*  
+#cartt, #log :hover{
+    background-color: rgb(244, 228, 138);
+    color:black;
+    transition: background-color 0.3s ease;
+} */

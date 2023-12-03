@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    body{
+    background:"https://media.cntraveler.com/photos/568ae16e67dc82253d9f72cf/master/pass/Stockholm-Public-Library-Alamy.jpg";
+    font-size:14px;
+    }
+    .container{
+    width:70%;
+    margin:auto;
+    margin-top:37px;
+    }
+    .contact-box{
+    background:#fff;
+    display:flex;
+    }
+    .contact-left{
+    flex-basis:60%;
+    padding:40px 60px;
+    background:#fff;
+    }
+    .contact-right{
+    flex-basis:50%;
+    padding:20px;
+    background:#D3B683;
+    }
+    .box{
+    margin-left:30px;
+    }
+    h1{
+    margin-bottom:10px;
+    }
+    h3{
+    margin-left:30px;
+    }
+    .container p{
+    margin-bottom:40px;
+    }
+    .input-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    margin-left:30px;
+    }
+    .input-row .input-group{
+    flex-basis:45%;
+    margin:15px;
+    }
+    input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+    outline:none;
+    padding-bottom:5px;
+    }
+    textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+    margin-left:30px;
+    }
+    label{
+    margin-bottom:6px;
+    display:block;
+    color:#1c00b5;
+    
+    }
+    button{
+    background:#1c00b5;
+    width:100px;
+    border:none;
+    color:#fff;
+    margin-left:30px;
+    height:35px;
+    border-radius:30px;margin-top:20px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+    }
+    .contact-left h3{
+    color:#1c00b5;
+    font-weight:600;
+    margin-bottom: 25px;
+    margin-top:20px;
+    }
+    .contact-right h3{
+    font-weight:600;
+    margin-bottom:30px;
+    margin-left:20px;
+    }
+    tr td:first-child{
+    padding-right:20px;
+    margin-left:30px;
+    }
+    .box-real{
+    margin-left:30px;
+    }
+    .contact-right{
+    font-size:12px;
+    color:black;
+    }
+    tr td{
+    font-size:15px;
+    padding:20px;
+    text-emphasis:bold;
+    }

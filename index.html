@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    
+    <nav>
+        <img src="IMG-20231113-WA0075.jpg" alt="Site Icon" id="site-icon">
+        <a href="index.html">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="helpdesk.html">Contact</a>
+            <input id="search-bar" type="text" placeholder="Search books...">
+            <button>Search</button>
+        
+        <button id="cart-icon"><a href="cart.html" id="cartt">🛒 Cart</a></button>
+        <button id="profile-icon"><a href="LOGIN.HTML" id="log">👤 Login</a></button>
+        <button id="wishlist-icon">❤️ Wishlist</button>
+
+    </nav>    
+    
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="slider image/bookk1.png" alt="">
+            </div>
+            <div class="item">
+                <img src="slider image/book15.png" alt="">
+            </div>
+            <div class="item">
+                <img src="slider image/bookk13.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="slider image/book14.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="slider image/bookk12.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+<section>
+    <div class="books-container">
+        
+        <div class="book-slot" id="book1">
+            <img src="books/banner10.jpg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $19.99</p>
+            <p>Rating: ★★★★☆</p>
+            <button onclick="addtocart('book1',19.99)">Buy Now</button>
+        </div>
+
+        
+        <div class="book-slot" id="book2">
+            <img src="books/banner2.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $24.99</p>
+            <p>Rating: ★★★★★</p>
+            <button onclick="addtocart('book2',24.99)">Buy Now</button>
+        </div>
+        <div class="book-slot" id="book3">
+            <img src="books/banner3.webp" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $12.99</p>
+            <p>Rating: ★★★★☆</p>
+            <button onclick="addtocart('book3',12.99)">Buy Now</button>
+        </div>
+
+        
+        <div class="book-slot" id="book4">
+            <img src="books/banner4.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $34.99</p>
+            <p>Rating: ★★★★★</p>
+            <button onclick="addtocart('book4',34.99)">Buy Now</button>
+        </div>
+        <div class="book-slot" id="book5">
+            <img src="books/banner5.jpg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $27.99</p>
+            <p>Rating: ★★★★☆</p>
+            <button onclick="addtocart('book5',27.99)">Buy Now</button>
+        </div>
+
+        
+        <div class="book-slot" id="book6">
+            <img src="books/bannerx.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $24.99</p>
+            <p>Rating: ★★★★★</p>
+            <button onclick="addtocart('book6',24.99)">Buy Now</button>
+        </div>
+        <!-- <div class="book-slot">
+            <img src="books/bannery.jpeg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $21.99</p>
+            <p>Rating: ★★★★☆</p>
+            <button>Buy Now</button>
+        </div>
+
+        
+        <div class="book-slot">
+            <img src="books/bannner4.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $18.99</p>
+            <p>Rating: ★★★★★</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="book-slot">
+            <img src="books/download.jpeg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author Name</p>
+            <p>Price: $15.99</p>
+            <p>Rating: ★★★★☆</p>
+            <button>Buy Now</button>
+        </div> -->
+
+        
+        
+        </div>
+        </section>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Journals</a></li>
+                        <li><a href="#">More books</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="x"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   
+</body>
+</html>
